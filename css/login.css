@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* 登录页面的样式 */
+.log-title{
+    width: 100%;
+    background: #ebebeb;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+.log-title h1{
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 84px;
+    text-align: center;
+}
+.cnt-log-main{
+    margin: 50px 0;
+    color: #222;
+}
+.cnt-log-main .cnt-row{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.cnt-log-main .cnt-row>div{
+    float: left;
+    width: 42%;
+    padding: 2%;
+    margin: 0 2%;
+    background: #f1f1f1;
+}
+.cnt-log-main .cnt-row h2{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px;
+    border-bottom: 1px solid #666;
+}
+.cnt-log-main .cnt-row p.dec{
+    font-weight: 700;
+    line-height: 24px;
+    color: #666;
+}
+.cnt-log-main .cnt-row form>label{
+    display: block;
+    margin: 10px 0 20px;
+}
+.cnt-log-main .cnt-row label p input{
+    height: 34px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+    text-indent: 1em;
+}
+.cnt-log-main .cnt-row label p input:focus{
+    border-color: #222;
+}
+.cnt-log-main .cnt-row .red{
+    color: #e21836;
+    padding-right: 6px;
+}
+.cnt-log-main .cnt-row input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.cnt-log-main .cnt-row form>p label{
+    line-height: 28px;
+    cursor: pointer;
+}
+.cnt-log-main .cnt-row .reset{
+    float: right;
+    color: #e21836;
+}
+.cnt-log-main .cnt-row input[type=submit]{
+    margin-top: 20px;
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: #e21836;
+    border: 3px solid #e21836;
+    color: #fff;
+}
+.cnt-log-main .cnt-row input[type=submit]:hover{
+    border-color: #bc001c;
+}
+.cnt-log-main .cnt-row a.zhence{
+    color: #e21836;
+    font-size: 13px;
+}
+.cnt-log-main .cnt-row .login-text{
+    position: absolute;
+    top: 380px;
+    left: 0;
+    background: #fff;
+}
+.cnt-log-main .cnt-row .login-text h3{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 40px;
+    margin-bottom: 4px;
+}
+.cnt-log-main .cnt-row .login-text li{
+    line-height: 20px;
+    font-size: 13px;
+    color: #666;
+    font-weight: 100;
+}
+@media screen and ( max-width: 1220px){
+    .cnt-log-main .cnt-row{
+        width: 100%;
+    }
+}
+@media screen and ( max-width: 930px){
+    .cnt-log-main .cnt-row>div{
+        float: none;
+        width: 88%;
+        margin: 0 4%;
+        margin-bottom: 30px;
+    }
+    .cnt-log-main .cnt-row .login-text{
+        position: static;
+    }
+}

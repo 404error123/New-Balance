@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* 顶部大图 */
+.big-img a{
+    display: block;
+    padding-top: 475px;
+    width: 100%;
+    background: url(../img/big1.jpg) center/cover;
+}
+
+.center-nav{
+    padding: 15px 0;
+    background-color: #efefef;
+    margin: 10px 0;
+}
+.center-nav ul{
+    width: 890px;
+    padding: 0 155px;
+    margin: 0 auto;
+}
+.center-nav li{
+    float: left;
+    width: 25%;
+    height: 70px;
+    padding: 10px 0;
+    text-align: center;
+}
+.center-nav li a{
+    display: inline-block;
+    width: 70px;
+    margin: 0 auto;
+}
+.center-nav li a p{
+    font-size: 14px;
+    color: #808080;
+    line-height: 36px;
+    text-align: left;
+    font-weight: 100;
+}
+.center-nav li a p::after{
+    content: ">";
+    margin-left: 3px;
+}
+.center-nav li a h3{
+    font-size: 24px;
+    color: #000;
+    line-height: 0.8em;
+}
+.content-dev .img-box{
+    display: block;
+    width: 1200px;
+    padding-top: 350px;
+    margin: 0 auto 10px auto;
+    background: url(../img/fantexi-3840-700.jpg) center/cover;
+}
+/* 首页商品列表 */
+.cell-list .cnt-box{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cell-list .cnt-box>div{
+    position: relative;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.cell-list .cnt-box .new-logo{
+    position: absolute;
+    width: 51px;
+    height: 15px;
+    background: url(../img/new.png);
+    top: 20px;
+    left: 0;
+}
+.cell-list .cnt-box .bigbox2 .new-logo{
+    left: 5px;
+}
+.cell-list .cnt-box .bigbox1{
+    padding-right: 5px;
+}
+.cell-list .cnt-box .bigbox2{
+    padding-left: 5px;
+}
+.cell-list .cnt-box .list-imgbox{
+    width: 100%;
+    padding-top: 57%;
+}
+.cell-list .cnt-box .box1{
+    background: url(../img/xiari-1172-670.jpg) center/cover;
+}
+.cell-list .cnt-box .box2{
+    background: url(../img/880-1172-670.jpg) center/cover;
+}
+.cell-list .cnt-box .box3{
+    background: url(../img/shuangsha-1172-670.jpg) center/cover;
+}
+.cell-list .cnt-box .box4{
+    background: url(../img/fuel-1172-670.jpg) center/cover;
+}
+.cell-list .cnt-box .box5{
+    background: url(../img/zhekou-1172-670.jpg) center/cover;
+}
+.cell-list .cnt-box .box6{
+    background: url(../img/usa-1172-670.jpg) center/cover;
+}
+.cell-list .cnt-box .text-box{
+    height: 140px;
+    padding-top: 30px;
+    color: #222;
+}
+.cell-list .cnt-box .text-box h4{
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+.cell-list .cnt-box .text-box h5{
+    font-size: 19px;
+    line-height: 1em;
+    height: 2em;
+    margin-bottom: 15px;
+}
+.cell-list .cnt-box .text-box p{
+    font-size: 15px;
+    color: #e21836;
+}
+.cell-list .cnt-box .text-box p a{
+    color: #e21836;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+.cell-list .cnt-box .text-box p span,
+.cell-list .cnt-box .text-box p a{
+    position: relative;
+    padding-right: 10px;
+}
+.cell-list .cnt-box .text-box p span::after,
+.cell-list .cnt-box .text-box p a::after{
+    content: url(../img/jian-red.png);
+    position: absolute;
+    top: 1px;
+    right: -8px;
+}
+.cell-list .cnt-box a.img-cnt-box:hover p span,
+.cell-list .cnt-box p a:hover{
+    color: #580915;
+}
+.cell-list .cnt-box a.img-cnt-box:hover p span::after,
+.cell-list .cnt-box .text-box p a:hover::after{
+    content: url(../img/jian-bl.png);
+}
+/* 首页底部大图 */
+.bottom-banner a{
+    display: block;
+    padding-top: 475px;
+    width: 100%;
+    background: url(../img/nb1-3840-950.jpg) center/cover;
+}
+/* 自适应样式 */
+@media screen and ( max-width: 1220px){
+    .cell-list .cnt-box,.content-dev .img-box,.center-nav ul{
+        width: 100%;
+    }
+    .center-nav ul{
+        padding: 0;
+    }
+    .bottom-banner a,.big-img a{
+        padding-top: 39%;
+    }
+    .content-dev .img-box{
+        width: 100%;
+        padding-top: 29%;
+    }
+}
+@media screen and ( max-width: 768px){
+    .cell-list .cnt-box>div{
+        width: 100%;
+    }
+    .cell-list .cnt-box .bigbox1,.cell-list .cnt-box .bigbox2{
+        padding: 0;
+    }
+    .center-nav{
+        background: #fff;
+        padding: 0;
+    }
+    .center-nav ul li{
+        width: 48%;
+        margin: 1%;
+        background-color: #efefef;
+    }
+}

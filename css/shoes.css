@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.shoes1{
+    height: 545px;
+    width: 100%;
+    background: url(../img/wordl-cap-pc_01.jpg);
+}
+.shoes2{
+    height: 370px;
+    background: url(../img/wordl-cap-pc_02.jpg);
+}
+.connet>div{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.connet a.hid-btn{
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    top: 0;
+    outline: none;
+}
+.connet .word-con1{
+    height: 111px;
+    background: url(../img/wordl-cap-pc_03.jpg);
+}
+.connet .word-con1 a{
+    right: 15%;
+}
+.connet .word-con2 a{
+    display: block;
+    height: 713px;
+    background: url(../img/wordl-cap-pc_04.jpg);
+}
+.connet .word-con3 a{
+    display: block;
+    height: 783px;
+    background: url(../img/wordl-cap-pc_05.jpg);
+}
+.connet .word-con4{
+    height: 111px;
+    background: url(../img/wordl-cap-pc_06.jpg);
+}
+.connet .word-con4 a{
+    left: 15%;
+}
+.connet .word-con5 a{
+    display: block;
+    height: 709px;
+    background: url(../img/wordl-cap-pc_07.jpg);
+}
+.connet .word-con6 a{
+    display: block;
+    height: 710px;
+    background: url(../img/wordl-cap-pc_08.jpg);
+}
+.connet .word-con7 a{
+    display: block;
+    height: 709px;
+    background: url(../img/wordl-cap-pc_09.jpg);
+}
+.sm-shoes{
+    width: 1341px;
+    margin: 80px auto 10px;
+    height: 474px;
+    overflow: hidden;
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sm-shoes span{
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5px;
+    width: 330px;
+    height: 228px;
+    overflow: hidden;
+}
+.sm-shoes img{
+    width: 330px;
+    transition: 0.6s;
+}
+.sm-shoes span .mark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    background: #000;
+    opacity: 0;
+}
+.sm-shoes span:hover img{
+    transform: scale(1.2);
+}
+
+.back{
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.back a{
+    color: #e21836;
+    font-weight: 100;
+}
+.back a:hover{
+    color: #580915;
+}
