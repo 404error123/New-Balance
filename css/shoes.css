@@ -18,6 +18,23 @@
 }
 .connet>div a{
     display: block;
+    position: relative;
+}
+.connet>div a img{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    animation: dian 1s linear infinite;
+}
+@keyframes dian{
+    0%{
+        opacity: 0.2;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
 .connet a.hid-btn{
     position: absolute;
@@ -37,9 +54,25 @@
     height: 713px;
     background-image: url(../img/wordl-cap-pc_04.jpg);
 }
+.connet .word-con2 a .dian1{
+    top: 33.5%;
+    left: 42.5%;
+}
+.connet .word-con2 a .dian2{
+    top: 57.5%;
+    left: 25%;
+}
 .connet .word-con3 a{
     height: 783px;
     background-image: url(../img/wordl-cap-pc_05.jpg);
+}
+.connet .word-con3 a .dian1{
+    top: 37.5%;
+    left: 59.5%;
+}
+.connet .word-con3 a .dian2{
+    top: 59.5%;
+    left: 72.1%;
 }
 .connet .word-con4{
     height: 111px;
@@ -52,13 +85,37 @@
     height: 709px;
     background-image: url(../img/wordl-cap-pc_07.jpg);
 }
+.connet .word-con5 a .dian1{
+    top: 36.5%;
+    left: 16%;
+}
+.connet .word-con5 a .dian2{
+    top: 62.5%;
+    left: 35.1%;
+}
 .connet .word-con6 a{
     height: 710px;
     background-image: url(../img/wordl-cap-pc_08.jpg);
 }
+.connet .word-con6 a .dian1{
+    top: 31%;
+    left: 58.8%;
+}
+.connet .word-con6 a .dian2{
+    top: 63.5%;
+    left: 73.1%;
+}
 .connet .word-con7 a{
     height: 709px;
     background-image: url(../img/wordl-cap-pc_09.jpg);
+}
+.connet .word-con7 a .dian1{
+    top: 30%;
+    left: 42%;
+}
+.connet .word-con7 a .dian2{
+    top: 61.4%;
+    left: 27.5%;
 }
 .connet>div a{
     background-position: center;
@@ -116,7 +173,7 @@
         justify-content: center;
     }
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1220px){
     .connet>div{
         width: 100%;
     }
@@ -231,6 +288,9 @@
         background: url(../img/wordl-cap-app_10.jpg) center/cover;
     }
     .sm-shoes span{
+        display: none;
+    }
+    .connet>div a img{
         display: none;
     }
 }
