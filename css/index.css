@@ -4,7 +4,7 @@
     display: block;
     padding-top: 475px;
     width: 100%;
-    background: url(../img/big1.jpg) center/cover;
+    background: url(../img/wu-3840-950.jpg) center/cover;
 }
 
 .center-nav{
@@ -187,5 +187,13 @@
         width: 48%;
         margin: 1%;
         background-color: #efefef;
+    }
+    .big-img a{
+        padding-top: 58.3%;
+        background: url(../img/wu-720-420.jpg) center/cover;
+    }
+    .content-dev .img-box{
+        padding-top: 57.16%;
+        background: url(../img/fantexi-1536-878.jpg) center/cover;
     }
 }
