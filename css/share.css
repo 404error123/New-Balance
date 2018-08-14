@@ -16,6 +16,9 @@ li{
 a{
     text-decoration: none;
 }
+img{
+    border: 0;
+}
 .clearfix:after{
     content: "";
     display: block;
