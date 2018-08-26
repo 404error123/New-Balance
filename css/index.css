@@ -149,12 +149,37 @@
 .cell-list .cnt-box .text-box p a:hover::after{
     content: url(../img/jian-bl.png);
 }
-/* 首页底部大图 */
-.bottom-banner a{
-    display: block;
-    padding-top: 475px;
+/* 首页底部轮播图 */
+.bottom-banner{
+    position: relative;
     width: 100%;
+    overflow: hidden;
+}
+.bottom-banner a{
+    float: left;
+    padding-top: 475px;
     background: url(../img/nb1-3840-950.jpg) center/cover;
+}
+.bottom-banner a:nth-child(2){
+    background: url(../img/NBRC-3840-950.jpg) center/cover;
+}
+.bottom-banner a:nth-child(3){
+    background: url(../img/shengji-3840-950.jpg) center/cover;
+}
+.bottom-banner span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+    width: 20px;
+    height: 40px;
+    background: #e21836 url(../img/jian.png) 0 -40px no-repeat;
+    cursor: pointer;
+}
+.bottom-banner span.next{
+    left: auto;
+    right: 0;
+    background-position: 0 0;
 }
 /* 自适应样式 */
 @media screen and ( max-width: 1220px){
@@ -164,8 +189,11 @@
     .center-nav ul{
         padding: 0;
     }
-    .bottom-banner a,.big-img a{
+    .big-img a{
         padding-top: 39%;
+    }
+    .bottom-banner a{
+        padding-top: 9%;
     }
     .content-dev .img-box{
         width: 100%;
