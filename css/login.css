@@ -35,7 +35,7 @@
     line-height: 36px;
     border-bottom: 1px solid #666;
 }
-.cnt-log-main .cnt-row p.dec{
+.cnt-log-main .cnt-row div.dec{
     font-weight: 700;
     line-height: 24px;
     color: #666;
@@ -44,14 +44,15 @@
     display: block;
     margin: 10px 0 20px;
 }
-.cnt-log-main .cnt-row label p input{
-    height: 34px;
+.cnt-log-main .cnt-row label div input{
+    height: 36px;
     border: 1px solid #ccc;
     width: 100%;
     outline: none;
     text-indent: 1em;
+    box-sizing: border-box;
 }
-.cnt-log-main .cnt-row label p input:focus{
+.cnt-log-main .cnt-row label div input:focus{
     border-color: #222;
 }
 .cnt-log-main .cnt-row .red{
@@ -89,7 +90,7 @@
 }
 .cnt-log-main .cnt-row .login-text{
     position: absolute;
-    top: 380px;
+    top: 440px;
     left: 0;
     background: #fff;
 }
@@ -104,6 +105,38 @@
     font-size: 13px;
     color: #666;
     font-weight: 100;
+}
+.cnt-log-main .register-cnt .indent{
+    padding-left: 24px;
+}
+.cnt-log-main .register-cnt .indent input{
+    margin-left: -24px;
+}
+.cnt-log-main .cnt-row p.warning{
+    display: none;
+    position: relative;
+    background: #fee834;
+    line-height: 32px;
+    text-indent: 1em;
+    font-weight: lighter;
+}
+.cnt-log-main .cnt-row p.warning::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    border: 10px solid transparent;
+    border-bottom-color: #fee834;
+}
+.cnt-log-main .cnt-row p.warning.lastcheck{
+    margin-top: 10px;
+}
+.cnt-log-main .cnt-row input.waring{
+    border: 2px solid #e31837;
+}
+.cnt-log-main .cnt-row input.waring:focus{
+    border: 2px solid #e31837;    
 }
 @media screen and ( max-width: 1220px){
     .cnt-log-main .cnt-row{

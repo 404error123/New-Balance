@@ -155,8 +155,12 @@
     width: 100%;
     overflow: hidden;
 }
+.bottom-banner .banner-box{
+    width: 400%;
+}
 .bottom-banner a{
     float: left;
+    width: 25%;
     padding-top: 475px;
     background: url(../img/nb1-3840-950.jpg) center/cover;
 }

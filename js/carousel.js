@@ -98,13 +98,8 @@ function initEvent(){
     window.addEventListener("resize",initSize)
 }
 function initSize(){
-    var num = img.length-1;
     imgLength = document.body.clientWidth;
-    for(var i=0;i<=num;i++){
-        img[i].style.width = imgLength + "px";
-    }
-    maxLen = imgLength*num;
-    box.style.width = imgLength*(num+1) + "px";
+    maxLen = imgLength*(img.length-1);
     left = -index*imgLength;
     box.style.marginLeft = left + "px";
 }
