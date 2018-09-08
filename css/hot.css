@@ -39,6 +39,7 @@
     background: url(../img/247v2-3840-700.jpg) center/cover;
 }
 .main{
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 }
@@ -48,6 +49,14 @@
     width: 260px;
     font-size: 14px;
     padding: 0 15px 30px 15px;
+}
+.main aside.fixed{
+    position: fixed;
+    top: 0;
+}
+.main aside.scroll{
+    position: absolute;
+    bottom: 0;
 }
 .main aside h3{
     padding-top: 10px;
@@ -243,16 +252,7 @@
 .main .sales-list .cnt-list:hover .hidden{
     display: block;
 }
-
-aside.fixed{
-    position: fixed;
-    top: 0;
-}
-aside.scroll{
-    position: absolute;
-    bottom: 0;
-}
-
+/* 返回首页 */
 .back{
     padding: 100px 0;
     margin: 0 auto;

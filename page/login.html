@@ -446,13 +446,13 @@
         <div class="cnt-row clearfix">
             <div class="login-cnt">
                 <h2>登录</h2>
-                <form action="" method="POST" id="login">
+                <form action="" method="POST" id="login" novalidate autocomplete="off">
                     <label>
                         <div class="dec">
                             <span class="red">*</span>电子邮箱地址
                         </div>
                         <div>
-                            <input type="text" name="username" id="username">
+                            <input type="email" name="username" id="username">
                             <p class="warning">请输入一个有效的电子邮箱地址</p>
                         </div>
                         
@@ -479,7 +479,7 @@
             </div>
             <div class="register-cnt">
                 <h2>注册账号</h2>
-                <form action="" method="POST" id="register">
+                <form action="" method="POST" id="register" novalidate autocomplete="off">
                     <label>
                         <div class="dec">姓名</div>
                         <div>
