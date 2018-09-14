@@ -7,7 +7,7 @@ function aside(){
         moveKey = true,
         lenTop;
     window.addEventListener("scroll",function(){
-        lenTop =  document.documentElement.scrollTop;
+        lenTop = document.body.scrollTop || document.documentElement.scrollTop;
         if(lenTop>asideTop && moveKey){
             aside.className = "fixed";
             if(lenTop>=num){

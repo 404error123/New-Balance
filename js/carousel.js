@@ -9,10 +9,10 @@ var box = document.getElementsByClassName("banner-box")[0],
     left,
     imgLength,
     maxLen,
-    nextkey,
+    nextkey = true,
     index = 0,
-    speed = 3000,
-    speed2 = 14;
+    speed = 3000,//移动频率
+    speed2 = 14;//图片移动速度
 initCarousel();
 
 function initCarousel(){
@@ -28,6 +28,7 @@ function setTimer(){
     },speed);
 }
 function animate(dire){
+    nextkey = false;    
     init = left;    
     index = dire==1?++index:--index;
     if(index>2){
@@ -76,13 +77,11 @@ function initEvent(){
         next.onclick = function(){
             if(nextkey){
                 animate(1);
-                nextkey = false;
             }
         };
         prev.onclick = function(){
             if(nextkey){
                 animate(2);
-                nextkey = false;
             }
         };
     };
@@ -102,4 +101,5 @@ function initSize(){
     maxLen = imgLength*(img.length-1);
     left = -index*imgLength;
     box.style.marginLeft = left + "px";
+    speed2 = parseInt(1920/imgLength)*14;
 }
